@@ -20,100 +20,21 @@
 <div class="container" ng-app="myApp" ng-controller="myCtrl">
     <div class="column-group">
 
-        <div ng-repeat="art in portfolio">
-                <img src="{{art.Image}}" alt="missing">
+        <!--<div ng-repeat="art in portfolio">
+                <img src="{{art.Image}}" alt="missing">-->
+                <img ng-repeat="x in records" src="{{x}}">
             <p>test</p>
-         </div>
+         
     </div>
 </div>
-
 
 <script>
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope) {
-    $scope.portfolio = [
-       {
-            "Image" : "pics/nude.jpg",
-            "Title" : "I lay (my)self to rest",
-            "Media" : "earth body work",
-            "Year"  : "2018"
-        },{
-            "Image" : "pics/mountains2.jpg",
-            "Title" : "And So We Burn",
-            "Media" : "Mixed Media: sheet glass, ceramics, wood",
-            "Dimension" : "5.00 X 1.20 X 0.63 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/srmountains.jpg",
-            "Title" : "Sierra Nevada Mountains / Santa Monica Mountains",
-            "Media" : "Mixed Media: soil on glass",
-            "Dimension" : "5.70 X 1.00 X 0.00 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/black.jpg",
-            "Title" : "Yosemite, burned roots and invisible mountains",
-            "Media" : "Mixed Media: hot sculpted glass and cast glass",
-            "Dimension" : "1.75 X 2.75 X 1.00 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/faces.jpg",
-            "Title" : "Sonder in Los Angeles",
-            "Media" : "Ceramics",
-            "Dimension" : "2.75 X 3.00 X 0.17 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/blood.jpg",
-            "Title" : "Womanhood - Collaboration: Izzy De La Meme and Ago Visconti",
-            "Media" : "Menstrual Blood on Toilet Paper",
-            "Dimension" : "7.00 X 9.00 X 0.00 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/sportrait.jpg",
-            "Title" : "Self Portrait - Collaboration with my Vavó, Neuza Machado",
-            "Media" : "Mixed Media: crocheted fibers, hair, slumped glass",
-            "Dimension" : "1.83 X 2.25 X 0.08 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/eggs.jpg",
-            "Title" : "Tipping Point Post Paris Accord",
-            "Media" : "Mixed Media: eggshells, Los Angeles asphalt, twine",
-            "Dimension" : "0.96 X 2.75 X 0.96 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/white.jpg",
-            "Title" : "Mother Sound and Father Deep, a tool a guide",
-            "Media" : "Mixed Media",
-            "Dimension" : "2.50 X 2.91 X 1.41 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/neon.png",
-            "Title" : "Unconscious",
-            "Media" : "Mixed Media: neon and UCLA asphalt",
-            "Dimension" : "1.66 X 0.33 X 1.58 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/brick.jpg",
-            "Title" : "Unconscious II",
-            "Media" : "Mixed Media: cinder block from Stanwood, WA and LED lights",
-            "Dimension" : ".67 X 0.67 X .67 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/unconsciousIII.jpg",
-            "Title" : "Unconscious III",
-            "Media" : "Mixed Media: PLA filament and Los Angeles asphalt",
-            "Dimension" : "1 X .5 X .33 F",
-            "Year"  : "2017"
-        },{
-            "Image" : "pics/flowerbubble.jpg",
-            "Title" : "Flower Bubble Baby Series",
-            "Media" : "Blown glass",
-            "Year"  : "2018"
-        },{
-            "Image" : "pics/skelly.gif",
-            "Title" : "It'll grow back?",
-            "Media" : "Mixed media stop motion clip",
-            "Year"  : "2018"
-        }
+    $scope.records = [
+        "pics/nude.jpg",
+        "pics/mountains2.jpg",
+       
     ]
 });
 </script>
