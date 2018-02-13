@@ -1,7 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <style>
     img {
-        width: 100%;
+        width: auto;
         float: center;
         /*margin-left: 25%;*/
         min-width: 500px;
@@ -24,7 +24,8 @@
 
             <div ng-repeat="art in portfolio">
                 <img src="{{art.Image}}" alt="missing">
-                <h1>{{art.Title}}</h1>
+                <!--<h1>{{art.Title}}</h1>-->
+                <p><b>{{art.Title}}</b></p>
                 <p>{{art.Media}}</p>
                 <p>{{art.Dimension}}</p>
                 <p>{{art.Year}}</p>
