@@ -1,0 +1,99 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<!--<h1 ng-repeat="x in records">{{x}}</h1>
+<p ng-repeat="name in names">{{name}}</p>-->
+
+
+    <div ng-repeat="x in portfolio">
+        <img src="{{x.Image}}" alt="missing">
+        <h1>{{x.Title}}</h1>
+        <p>{{x.Media}}</p>
+        <p>{{x.Dimension}}</p>
+        <p>{{x.Year}}</p>
+    </div>
+
+
+
+
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+
+    $scope.portfolio = [
+       {
+            "Image" : "image.PNG",
+            "Title" : "I lay (my)self to rest",
+            "Media" : "earth body work",
+            "Year"  : "2018"
+        },{
+            "Title" : "And So We Burn",
+            "Media" : "Mixed Media: sheet glass, ceramics, wood",
+            "Dimension" : "5.00 X 1.20 X 0.63 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Sierra Nevada Mountains / Santa Monica Mountains",
+            "Media" : "Mixed Media: soil on glass",
+            "Dimension" : "5.70 X 1.00 X 0.00 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Yosemite, burned roots and invisible mountains",
+            "Media" : "Mixed Media: hot sculpted glass and cast glass",
+            "Dimension" : "1.75 X 2.75 X 1.00 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Sonder in Los Angeles",
+            "Media" : "Ceramics",
+            "Dimension" : "2.75 X 3.00 X 0.17 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Womanhood - Collaboration: Izzy De La Meme and Ago Visconti",
+            "Media" : "Menstrual Blood on Toilet Paper",
+            "Dimension" : "7.00 X 9.00 X 0.00 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Self Portrait - Collaboration with my Vavó, Neuza Machado",
+            "Media" : "Mixed Media: crocheted fibers, hair, slumped glass",
+            "Dimension" : "1.83 X 2.25 X 0.08 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Tipping Point Post Paris Accord",
+            "Media" : "Mixed Media: eggshells, Los Angeles asphalt, twine",
+            "Dimension" : "0.96 X 2.75 X 0.96 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Mother Sound and Father Deep, a tool a guide",
+            "Media" : "Mixed Media",
+            "Dimension" : "2.50 X 2.91 X 1.41 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Unconscious",
+            "Media" : "Mixed Media: neon and UCLA asphalt",
+            "Dimension" : "1.66 X 0.33 X 1.58 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Unconscious II",
+            "Media" : "Mixed Media: cinder block from Stanwood, WA and LED lights",
+            "Dimension" : ".67 X 0.67 X .67 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Unconscious III",
+            "Media" : "Mixed Media: PLA filament and Los Angeles asphalt",
+            "Dimension" : "1 X .5 X .33 F",
+            "Year"  : "2017"
+        },{
+            "Title" : "Flower Bubble Baby Series",
+            "Media" : "Blown glass",
+            "Year"  : "2018"
+        },{
+            "Title" : "It'll grow back?",
+            "Media" : "Mixed media stop motion clip",
+            "Year"  : "2018"
+        }
+    ]
+});
+</script>
+
+</body>
