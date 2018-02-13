@@ -4,14 +4,17 @@
 
 <!--<h1 ng-repeat="art in records">{{art}}</h1>
 <p ng-repeat="name in names">{{name}}</p>-->
+    <div class="container">
+        <div class="column-group">
 
-
-    <div ng-repeat="art in portfolio">
-        <img src="{{art.Image}}" alt="missing">
-        <h1>{{art.Title}}</h1>
-        <p>{{art.Media}}</p>
-        <p>{{art.Dimension}}</p>
-        <p>{{art.Year}}</p>
+            <div ng-repeat="art in portfolio">
+                <img src="{{art.Image}}" alt="missing">
+                <h1>{{art.Title}}</h1>
+                <p>{{art.Media}}</p>
+                <p>{{art.Dimension}}</p>
+                <p>{{art.Year}}</p>
+            </div>
+        </div>
     </div>
 
 
