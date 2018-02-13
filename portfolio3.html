@@ -22,13 +22,13 @@
     <div class="container" ng-app="myApp" ng-controller="myCtrl">
         <div class="column-group">
 
-            <div ng-repeat="art in portfolio">
-                <img src="{{art.Image}}" alt="missing">
+            <div ng-repeat="x in portfolio">
+                <img src="{{x.Image}}" alt="missing">
                 <!--<h1>{{art.Title}}</h1>-->
-                <p><b>{{art.Title}}</b></p>
-                <p>{{art.Media}}</p>
-                <p>{{art.Dimension}}</p>
-                <p>{{art.Year}}</p>
+                <p><b>{{x.Title}}</b></p>
+                <p>{{x.Media}}</p>
+                <p>{{x.Dimension}}</p>
+                <p>{{x.Year}}</p>
             </div>
         </div>
     </div>
