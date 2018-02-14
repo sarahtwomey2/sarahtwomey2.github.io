@@ -15,20 +15,20 @@
     
 </style>
 
-<!--<body ng-app="myApp" ng-controller="myCtrl">-->
+<body ng-app="myApp" ng-controller="myCtrl">
 
 <!--<h1 ng-repeat="art in records">{{art}}</h1>
 <p ng-repeat="name in names">{{name}}</p>-->
-    <div class="container" ng-app="myApp" ng-controller="myCtrl">
+    <div class="container">
         <div class="column-group">
 
-            <div ng-repeat="x in portfolio">
-                <img src="{{x.Image}}" alt="missing">
+            <div ng-repeat="art in portfolio">
+                <img src="{{art.Image}}" alt="missing">
                 <!--<h1>{{art.Title}}</h1>-->
-                <p><b>{{x.Title}}</b></p>
-                <p>{{x.Media}}</p>
-                <p>{{x.Dimension}}</p>
-                <p>{{x.Year}}</p>
+                <p><b>{{art.Title}}</b></p>
+                <p>{{art.Media}}</p>
+                <p>{{art.Dimension}}</p>
+                <p>{{art.Year}}</p>
             </div>
         </div>
     </div>
@@ -128,4 +128,4 @@ app.controller("myCtrl", function($scope) {
 });
 </script>
 
-<!--</body>-->
+</body>
