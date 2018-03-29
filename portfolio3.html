@@ -24,8 +24,8 @@
     }
     .box {
         background-color: #cccccc;
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
     }
     
     
@@ -122,7 +122,7 @@
     
     <div class="container" ng-app="myApp" ng-controller="myCtrl">
         <div class="column-group">
-
+            <h1 style="text-align: center;">Felicity Machado</h1>
             <div ng-repeat="art in portfolio">
                 <div class="box">
                     <img src="{{art.Image}}" alt="missing">
@@ -132,7 +132,7 @@
                     <p>{{art.Dimension}}</p>
                     <p>{{art.Year}}</p>
                 </div>
-                <br><br>
+                
             </div>
             <hr><br>
             
@@ -141,7 +141,8 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="exec-member">
-                                <img ng-repeat="art in portfolio" class="execpics"  src="{{art.Image}}" alt="missing">
+                                <img ng-repeat="art in portfolio" class="execpics center"  src="{{art.Image}}" alt="missing">
+                                
                             </div>
                            
                         </div>
@@ -155,6 +156,7 @@
             <div>
                 <!-- Trigger the Modal -->
                 <img id="myImg" src="pics/a.JPG" alt="Trolltunga, Norway" width="300" height="200">
+                <!--<img id="myImg" ng-repeat="art in portfolio" class="execpics center"  src="{{art.Image}}" alt="missing">-->
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
